@@ -17,17 +17,24 @@ body {
   font-family: 'Cinzel', serif;
   background-color: #203147;
   background-position: center;
+  font-size: 24px;
 }
 
 nav {
   padding: 15px;
   background-color: #D8AE48;
-  border-radius: 40px 0 40px 0;
 }
 
-h1, h2  {
+h1  {
   color: #b7c5dd;
+  font-size: 36px;
 }
+
+h2  {
+  color: #b7c5dd;
+  font-size: 32px;
+}
+
 
 .character {
  display: inline-block;

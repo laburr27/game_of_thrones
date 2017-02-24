@@ -1,0 +1,8 @@
+<h1><%= @house.name %></h1>
+
+<% @house.characters.each do |character| %>
+  <ul class="character">
+    <%= link_to character.first_name, character %> <%= link_to character.last_name, character %>
+    <%= image_tag character.img_url %>
+  </ul>
+<% end %>

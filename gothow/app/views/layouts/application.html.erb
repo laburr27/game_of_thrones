@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gothow</title>
+    <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>Welcome to the Kingdom</h1>
+    <nav>
+      <%= link_to "The Houses", houses_path %> | <%= link_to "The Characters", characters_path %> | <%= link_to "Create Character", new_character_path %>
+    </nav>
+
+    <%= yield %>
+  </body>
+</html>

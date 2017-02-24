@@ -1,0 +1,8 @@
+<h1>Welcome to the Family</h1>
+<ul>
+  <% @characters.each do |character| %>
+    <li>
+      <%= link_to "#{character.first_name} #{character.last_name} - House #{character.house.name}", character %>
+    </li>
+  <% end %>
+</ul>
